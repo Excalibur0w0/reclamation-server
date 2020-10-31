@@ -6,7 +6,44 @@
 
     <groupId>reclamation</groupId>
     <artifactId>reclamation-server</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>music</module>
+    </modules>
+
+    <properties>
+        <spring-context.version>5.2.10.RELEASE</spring-context.version>
+        <aspectjweaver.version>1.9.6</aspectjweaver.version>
+        <netty-all.version>5.0.0.Alpha2</netty-all.version>
+        <dubbo.version>2.7.8</dubbo.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-context.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty-all.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

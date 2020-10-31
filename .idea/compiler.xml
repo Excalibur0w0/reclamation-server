@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="reclamation-server" />
+        <module name="music-server" />
+        <module name="music-api" />
+        <module name="music-common" />
       </profile>
     </annotationProcessing>
   </component>
